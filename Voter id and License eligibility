@@ -1,0 +1,13 @@
+name = str(input("Enter your name = "))
+print ("welcome ",name)
+print ("what's your age")
+
+age = float(input("Enter You current age = "))
+print ("since your Age = ", age)
+
+if age >= 18 and age<=95:
+    print("your age is valid for driving license & can vote in elections")
+elif age>=16 :
+    print("You can apply for learning license")
+else :
+    print("you are small for such kind of oppurtunities & focus on your studies")
