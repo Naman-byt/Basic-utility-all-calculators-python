@@ -1,0 +1,15 @@
+#============================================================
+# All dimension calculator for Rectangle
+#=============================================================
+
+print("Rectangle Dimension calculator")
+
+l = float(input("Enter length = "))
+b = float(input("Enter breadth = "))
+
+area = (l*b)
+d = (l**2 + b**2 )**0.5
+p = (l+b)*2
+print("Area = ", area)
+print("Diagonal = ",d)
+print("Perimeter = ",p)
