@@ -1,0 +1,15 @@
+#============================================================
+# All dimension calculator for Circles
+#=============================================================
+
+print(" Circles Dimension calculator")
+
+r = float(input("Enter Radius of circle = "))
+
+
+area = (r**2)*3.1415
+d = (r*2)
+c = (r)*2*3.1415
+print("Area = ", area)
+print("Diameter = ",d)
+print("Circumfrence = ",c)
