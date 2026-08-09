@@ -1,2 +1,2 @@
-# Basic-utility-all-calculators-python
+# Basic-utility-all-calculators-&-other-projects-python
 all types of calculators
