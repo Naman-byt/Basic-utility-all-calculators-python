@@ -1,0 +1,11 @@
+print("Let's check if a number is 6 multiple or not")
+
+num = int(input("Enter your num = "))
+
+if num/6 and num%6==0:
+    print ("Yes,",num ,"is multiple of 6")
+
+else:
+    print("It is not a multiple of 6")
+
+
