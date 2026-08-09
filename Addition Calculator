@@ -1,0 +1,10 @@
+#==================================================================
+#addition of two nums
+#==================================================================
+
+
+first_num = float (input("Enter your 1st num = "))
+second_num = float(input("Enter your 2nd num = "))
+sum = first_num+second_num
+
+print("Sum of two numbers = ",sum)
