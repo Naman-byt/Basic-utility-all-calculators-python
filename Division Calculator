@@ -1,0 +1,15 @@
+#============================================================
+# Division Calculator (float value and floor division value)
+#=============================================================
+
+first_num = float(input("Enter your Divisor = "))
+second_num = float(input("Enter your Divident = "))
+
+Q = second_num/first_num
+r = second_num%first_num
+floor_division = first_num//second_num
+
+
+print("your Quotient is = ",Q)
+print("your Remainder is = ",r)
+print("your Quotient after Floor Division = ",floor_division)
