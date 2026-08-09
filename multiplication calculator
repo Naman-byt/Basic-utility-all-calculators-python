@@ -1,0 +1,11 @@
+#============================================================
+# Multiplication calculator
+#=============================================================
+print("Multiplication calculator")
+
+first_num = float(input("Enter your 1st num = "))
+second_num = float(input("Enter your 2nd num = "))
+
+prod = second_num*first_num
+
+print("your Product is = ",prod)
