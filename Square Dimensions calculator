@@ -1,5 +1,5 @@
 #============================================================
-# All dimension calculator for Rectangle
+# All dimension calculator for Square 
 #=============================================================
 
 print("Square Dimension calculator")
