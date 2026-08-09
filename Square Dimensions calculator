@@ -1,0 +1,15 @@
+#============================================================
+# All dimension calculator for Rectangle
+#=============================================================
+
+print("Square Dimension calculator")
+
+side = float(input("Enter length of side = "))
+
+
+area = (side*side)
+d = (side)*2**0.5
+p = (side)*4
+print("Area = ", area)
+print("Diagonal = ",d)
+print("Perimeter = ",p)
