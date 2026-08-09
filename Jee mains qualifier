@@ -1,0 +1,14 @@
+#============================================================
+# if , else elif condition statements
+#=============================================================
+
+print("Qualifications for Jee Mains ")
+
+x = float(input("Enter your 12th Board percentage = "))
+
+if x>=75 and x<=100:
+    print("Elegible for Jee mains")
+elif x >= 50 and x < 75:
+    print("Average Student ")
+else :
+    print("Try hard")
