@@ -1,0 +1,8 @@
+print("let's check your number is even or odd")
+
+num = float(input("Enter any number = "))
+
+if num/2 and num%2 == 0:
+    print(" your num is Even")
+else:
+    print("your number is odd")
