@@ -1,0 +1,14 @@
+#================================================
+# Name Length Calculator
+#================================================
+
+name = (input ("Enter your  first name = "))
+
+print(len(name), "is your length of name")
+
+if len(name) <=5:
+    print("Hence your name is short")
+elif len (name) >=6:
+    print("your name is long")
+else:
+    print("Try again")
