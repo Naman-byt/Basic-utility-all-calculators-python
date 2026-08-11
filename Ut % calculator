@@ -1,0 +1,12 @@
+#========================================================
+# Unit test % age calcultator
+#========================================================
+
+m1 = float(input("Enter your english marks = "))
+m2 = float(input("Enter your maths marks = "))
+m3 = float(input("Enter your science marks = "))
+m4 = float(input ("Enter your ai marks = "))
+m5 = float(input("Enter your sst marks = "))
+m6 = float(input("Enter your hindi marks = "))
+sum = (m1+m2+m3+m4+m5+m6)/120 * 100
+print(" Hence your ut percentage = ",sum)
