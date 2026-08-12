@@ -1,0 +1,13 @@
+#==================================================
+# FIRST EQUATION OF MOTION 
+#==================================================
+
+print("Your Final velocity calculator")
+
+u = float(input("Enter initial velocity = "))
+a = float(input("Enter acceleration = "))
+t = float(input("Enter time = "))
+
+v = u + (a*t)
+print("velocity = ",v)
+
