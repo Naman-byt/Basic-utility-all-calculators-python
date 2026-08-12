@@ -1,0 +1,10 @@
+#========================================================================
+# CAR MILAGE CALCULATOR 
+#========================================================================
+
+print("Welcome to car millage calculator ")
+n = float(input("Enter your fuel consumed in literes = "))
+m = float(input (" Enter your kilometers travelled = "))
+
+sum = m/n
+print ("Your Car millage is = ", sum)
