@@ -1,0 +1,8 @@
+#==========================================================
+#== CELCIUS TO FARENHEIT CONVERTER ========================
+#==========================================================
+print('Welcome to Celcius to Fahrenheit converter ')
+
+c = float(input('Enter your Celcius temprature = '))
+f = (c*1.8)+32
+print(c,'In Fahrenheit it will be = ', f)
