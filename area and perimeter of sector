@@ -1,0 +1,10 @@
+print('Welcome to area and perimeter of sector of circle calculator')
+
+t = float(input('Enter the subtended angle = '))
+r = float(input('Enter the radius of circle = '))
+area = (t/360)*(3.14*(r**2))
+p = (t/360)*(3.14*2*r)
+print('---------RESULTS-----------')
+print('Hence your area of sector = ', area)
+print('Hence your perimeter of sector = ', p)
+print('Thank You!')
