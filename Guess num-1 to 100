@@ -1,0 +1,23 @@
+import random 
+print("Welcome to Number Guessing Game 🎮")
+print("-------RULES--------")
+print("You will get 10 Attempts ")
+print("Computer will guess in between 1 to 100")
+sn = random.randint(1, 100)
+a = 0
+b = 10
+while a<b:
+    a+=1
+    g = int(input("Enter your Guess = "))
+
+    if g == sn:
+        print("Correct!,You got it in attempt = ", a)
+        break
+    elif g < sn:
+        print('Hint 💡- Guess a higher one than it ')
+    elif g > sn:
+        print("Hint 💡- Guess a lower number than it ")
+    else:
+        print("try again - read the rules again")
+if sn != g:
+    print("Your Attempts are finish. Have better luck next time ")
