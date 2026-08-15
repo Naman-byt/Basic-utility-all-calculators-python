@@ -1,0 +1,30 @@
+print('Welcome to IIT Branch Alloter')
+print("Let's Check your branch For stream -AI & ML ")
+
+r = int(input('Enter your Jee Advance Rank = '))
+
+if r >= 1 and r <= 67:
+    print("IIT Bombay — Computer Science & Engineering (AI Focus)")
+elif r >= 68 and r <= 118:
+    print("IIT Delhi — Computer Science & Engineering (AI Specialization)")
+elif r >= 190 and r <= 290:
+    print('IIT Madras — Artificial Intelligence & Data Analytics')
+elif r >=291 and r <= 770:
+    print('IIT Roorkee — Data Science & Artificial Intelligence')
+elif r >= 771 and r <= 830:
+    print('IIT Hyderabad — Artificial Intelligence')
+elif r >= 831 and r <= 850:
+    print('IIT Kharagpur — Artificial Intelligence')
+elif r >= 851 and r <= 1080:
+    print('IIT Guwahati — Data Science & Artificial Intelligence')
+elif r >= 1081 and r <= 1130:
+    print('IIT Guwahati — Data Science & Artificial Intelligence')
+elif r >= 1131 and r <= 1850:
+    print('IIT Gandhinagar — Artificial Intelligence') 
+elif r >= 1851 and r <= 2500:
+    print('IIT Ropar — Artificial Intelligence & Data Engineering')
+else:
+    print("Not Qualified for such IIT's ")
+
+
+
