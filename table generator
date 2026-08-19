@@ -1,0 +1,6 @@
+print("Welcome to table generator ")
+n = int(input('Enter your number of which you want to get table = '))
+i = 1
+while i <= 20:
+    print(4*i)
+    i += 1
