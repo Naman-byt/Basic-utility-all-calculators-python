@@ -1,2 +1,1 @@
-# Basic-advance- utility-all-calculators-&-other-projects-python
-all types of calculators
+First Inventory Project From scratch
