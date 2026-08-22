@@ -1,0 +1,10 @@
+print('Odd Numbers form 1 to 500')
+
+i = 0
+while i <= 500:
+    if (i%2 != 0):
+            i += 1
+            continue
+    i += 1
+    
+    print(i)  
