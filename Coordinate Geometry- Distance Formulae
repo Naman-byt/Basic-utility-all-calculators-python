@@ -1,0 +1,9 @@
+print("Distance finder between 2 coordinates ")
+x1 = int(input ('Enter abscissa of initial point = '))
+y1 = int(input('Enter ordinate of initial point = '))
+x2 = int(input ('Enter abscissa of final point = '))
+y2 = int(input('Enter ordinate of final point = '))
+
+d = ((x2-x1)**2 + (y2-y1)**2)**0.5
+print('coordinates are ',(x1,y1),(x2,y2))
+print("Hence distance = ",d,' units')
