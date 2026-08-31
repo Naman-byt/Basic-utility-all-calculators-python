@@ -1,0 +1,22 @@
+import random
+sn = random.randint(1,250)
+
+print('-------RULES---------')
+print('- You wiil get 15 chances to guess a number between 1 to 250')
+b = 0
+won = False
+while b < 15:
+    a = int(input('Enter your Guess: '))
+    b +=1
+    if sn == a:
+        print ("Correct Answer you got in ", b)
+        won = True
+        break
+        
+    elif sn > a:
+        print ("Guess a Higher number ")
+    elif sn < a:
+        print ('Guess a Lower number ')
+    else:
+        ('try again')
+    
