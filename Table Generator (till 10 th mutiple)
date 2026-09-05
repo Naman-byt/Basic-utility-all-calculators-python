@@ -1,0 +1,7 @@
+print ("Enter any number to get its table ")
+n = int(input ("Enter your number to get the tabe - "))
+i = 1 
+while i <= 10:
+    
+    print (n ,'*',i, '=', n*i )
+    i += 1
