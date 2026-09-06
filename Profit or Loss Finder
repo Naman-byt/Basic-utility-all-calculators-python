@@ -1,0 +1,11 @@
+print("Welcome to Profit / Loss finder ")
+sp = float(input("Enter Your Selling Price: "))
+cp = float(input("Enter Your Cost Price: "))
+b = sp - cp
+if sp == cp:
+    print("No profit or loss is done , balance = ",b)
+elif sp > cp:
+    print("Profit is done , balance = ",b)
+else:
+    print("Loss is done , balance = ",b)
+print("Hence your final balance = ",b)
