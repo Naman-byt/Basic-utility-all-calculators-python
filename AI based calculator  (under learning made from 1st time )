@@ -1,0 +1,86 @@
+"""A simple calculator with a graphical interface for Python beginners."""
+
+import math
+import tkinter as tk
+from tkinter import messagebox
+
+
+def add_to_display(value):
+    """Put the clicked number or operator into the calculator display."""
+    display.insert(tk.END, value)
+
+
+def clear_display():
+    """Remove everything currently shown on the display."""
+    display.delete(0, tk.END)
+
+
+def calculate_answer():
+    """Calculate the expression entered by the user."""
+    try:
+        # Get the text from the display, then let Python calculate it.
+        expression = display.get()
+        answer = eval(expression)
+
+        # Replace the old expression with the answer.
+        clear_display()
+        display.insert(0, str(answer))
+    except (SyntaxError, ZeroDivisionError, TypeError, NameError):
+        # Show a friendly message for invalid expressions, such as 5++.
+        messagebox.showerror("Invalid calculation", "Please enter a valid calculation.")
+        clear_display()
+
+
+def find_square_root():
+    """Find the square root of the number in the display."""
+    try:
+        number = float(display.get())
+
+        # Real square roots are not available for negative numbers.
+        if number < 0:
+            raise ValueError
+
+        answer = math.sqrt(number)
+        clear_display()
+        display.insert(0, str(answer))
+    except ValueError:
+        messagebox.showerror("Invalid number", "Enter a zero or positive number for square root.")
+        clear_display()
+
+
+# Create the main application window.
+window = tk.Tk()
+window.title("Beginner Calculator")
+window.resizable(False, False)
+
+# This entry box is the calculator's display.
+display = tk.Entry(window, width=22, font=("Arial", 18), justify="right")
+display.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
+
+# Each inner list represents one row of calculator buttons.
+buttons = [
+    [("7", "number"), ("8", "number"), ("9", "number"), ("/", "number")],
+    [("4", "number"), ("5", "number"), ("6", "number"), ("*", "number")],
+    [("1", "number"), ("2", "number"), ("3", "number"), ("-", "number")],
+    [("0", "number"), (".", "number"), ("=", "answer"), ("+", "number")],
+    [("√", "square_root"), ("C", "clear")],
+]
+
+# Create every button and put it in a grid under the display.
+for row_number, row in enumerate(buttons, start=1):
+    for column_number, (label, action) in enumerate(row):
+        if action == "number":
+            command = lambda value=label: add_to_display(value)
+        elif action == "answer":
+            command = calculate_answer
+        elif action == "square_root":
+            command = find_square_root
+        else:
+            command = clear_display
+
+        button = tk.Button(window, text=label, width=5, height=2,
+                           font=("Arial", 14), command=command)
+        button.grid(row=row_number, column=column_number, padx=3, pady=3)
+
+# Keep the calculator window open until the user closes it.
+window.mainloop()
