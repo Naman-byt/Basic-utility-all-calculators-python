@@ -1,0 +1,10 @@
+print("Welcome to Airthmetic progression term Finder")
+
+a = int(input('Enter your first term: '))
+d = int(input('Enter your common difference: '))
+n = int(input('Enter your term to find: '))
+
+p = a + (n-1)*d
+
+print("Here is the value of your term = ",p)
+print('Thank you! ')
